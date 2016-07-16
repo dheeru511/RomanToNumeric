@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002B5C3F1BBE28870002B09D /* RomanStringTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B5C3E1BBE28870002B09D /* RomanStringTestCase.m */; settings = {ASSET_TAGS = (); }; };
+		002B5C421BBE302C0002B09D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B5C411BBE302C0002B09D /* Model.m */; settings = {ASSET_TAGS = (); }; };
 		006A28351BBDE76100E6D443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A28341BBDE76100E6D443 /* main.m */; };
 		006A28381BBDE76100E6D443 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A28371BBDE76100E6D443 /* AppDelegate.m */; };
 		006A283B1BBDE76100E6D443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A283A1BBDE76100E6D443 /* ViewController.m */; };
 		006A283E1BBDE76100E6D443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A283C1BBDE76100E6D443 /* Main.storyboard */; };
 		006A28401BBDE76100E6D443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006A283F1BBDE76100E6D443 /* Assets.xcassets */; };
 		006A28431BBDE76100E6D443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A28411BBDE76100E6D443 /* LaunchScreen.storyboard */; };
-		006A284E1BBDE76100E6D443 /* RomanToNumericTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006A284D1BBDE76100E6D443 /* RomanToNumericTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002B5C3E1BBE28870002B09D /* RomanStringTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RomanStringTestCase.m; path = ../RomanStringTestCase.m; sourceTree = "<group>"; };
+		002B5C401BBE302C0002B09D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		002B5C411BBE302C0002B09D /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		006A28301BBDE76100E6D443 /* RomanToNumeric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomanToNumeric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006A28341BBDE76100E6D443 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		006A28361BBDE76100E6D443 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,7 +42,6 @@
 		006A28421BBDE76100E6D443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006A28441BBDE76100E6D443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006A28491BBDE76100E6D443 /* RomanToNumericTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanToNumericTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		006A284D1BBDE76100E6D443 /* RomanToNumericTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanToNumericTests.m; sourceTree = "<group>"; };
 		006A284F1BBDE76100E6D443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +63,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002B5C441BBE38A90002B09D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				002B5C401BBE302C0002B09D /* Model.h */,
+				002B5C411BBE302C0002B09D /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		002B5C451BBE38B20002B09D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				006A28411BBDE76100E6D443 /* LaunchScreen.storyboard */,
+				006A28391BBDE76100E6D443 /* ViewController.h */,
+				006A283A1BBDE76100E6D443 /* ViewController.m */,
+				006A283C1BBDE76100E6D443 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		006A28271BBDE76100E6D443 = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +106,8 @@
 			children = (
 				006A28361BBDE76100E6D443 /* AppDelegate.h */,
 				006A28371BBDE76100E6D443 /* AppDelegate.m */,
-				006A28391BBDE76100E6D443 /* ViewController.h */,
-				006A283A1BBDE76100E6D443 /* ViewController.m */,
-				006A283C1BBDE76100E6D443 /* Main.storyboard */,
-				006A283F1BBDE76100E6D443 /* Assets.xcassets */,
-				006A28411BBDE76100E6D443 /* LaunchScreen.storyboard */,
-				006A28441BBDE76100E6D443 /* Info.plist */,
+				002B5C441BBE38A90002B09D /* Model */,
+				002B5C451BBE38B20002B09D /* View */,
 				006A28331BBDE76100E6D443 /* Supporting Files */,
 			);
 			path = RomanToNumeric;
@@ -97,6 +116,8 @@
 		006A28331BBDE76100E6D443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				006A28441BBDE76100E6D443 /* Info.plist */,
+				006A283F1BBDE76100E6D443 /* Assets.xcassets */,
 				006A28341BBDE76100E6D443 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -105,7 +126,7 @@
 		006A284C1BBDE76100E6D443 /* RomanToNumericTests */ = {
 			isa = PBXGroup;
 			children = (
-				006A284D1BBDE76100E6D443 /* RomanToNumericTests.m */,
+				002B5C3E1BBE28870002B09D /* RomanStringTestCase.m */,
 				006A284F1BBDE76100E6D443 /* Info.plist */,
 			);
 			path = RomanToNumericTests;
@@ -216,6 +237,7 @@
 				006A283B1BBDE76100E6D443 /* ViewController.m in Sources */,
 				006A28381BBDE76100E6D443 /* AppDelegate.m in Sources */,
 				006A28351BBDE76100E6D443 /* main.m in Sources */,
+				002B5C421BBE302C0002B09D /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006A284E1BBDE76100E6D443 /* RomanToNumericTests.m in Sources */,
+				002B5C3F1BBE28870002B09D /* RomanStringTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +426,7 @@
 				006A28541BBDE76100E6D443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		006A28551BBDE76100E6D443 /* Build configuration list for PBXNativeTarget "RomanToNumericTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +435,7 @@
 				006A28571BBDE76100E6D443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
